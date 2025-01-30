@@ -1,11 +1,58 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Browse Pet</title>
-</head>
-<body>
-    
-</body>
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <!-- Tailwind -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        body {
+        font-family: "Sora", serif;
+        font-optical-sizing: auto;
+        font-weight: 3400;
+        font-style: normal;
+        }
+      @theme {
+        --color-pet-primary: #FFF9F4;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="max-w-7xl mx-auto">
+        <header class="bg-pet-primary px-[5vw]">
+            <div class="flex justify-between py-4 items-center">
+                <!-- Logo -->
+                <section class="flex justify-center gap-4 items-center">
+                    <img src="assets/logo-header.png" alt="">
+                    <h1 class="hidden lg:block text-3xl text-gray-500 font-semibold">Browse Pet</h1>
+                </section>
+                 <!-- Navigation Links -->
+                <nav class="hidden md:block">
+                    <ul class="flex justify-between items-center gap-8">
+                        <li><a class="hover:text-yellow-500 transition-colors duration-300" href="#">Fine a Pet</a></li>
+                        <li><a class="hover:text-yellow-500 transition-colors duration-300" href="#">Breeds</a></li>
+                        <li><a class="hover:text-yellow-500 transition-colors duration-300" href="#">Contact US</a></li>
+                    </ul>
+                </nav>
+                <!-- Icons and Buttons -->
+                <section class="hidden md:flex items-center gap-4">
+                    <i class="text-2xl fa-regular fa-bell hover:text-yellow-400 transition-colors duration-300"></i>
+                    <i class="text-2xl fa-solid fa-magnifying-glass hover:text-yellow-400 transition-colors duration-300"></i>
+                    <button class="box-border border border-yellow-300 py-2 px-4 rounded  hover:bg-yellow-400 hover:text-white transition-colors duration-400">Login</button>
+                    <button class="bg-yellow-300 py-2 px-4 rounded hover:bg-yellow-400 hover:text-white transition-colors duration-400">Register</button>
+                </section>
+                <section class="md:hidden">
+                    <i class="fa-solid fa-bars text-3xl"></i>
+                </section>
+            </div>
+        </header>
+        
+    </main>
+  </body>
 </html>
