@@ -26,7 +26,15 @@
         font-weight: 400;
         font-style: normal;
         }
-
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .animated-gradient {
+            background-size: 200% auto;
+            animation: gradientAnimation 3s linear infinite;
+        }
       @theme {
         --color-pet-primary: #fff3e8;
       }
@@ -65,7 +73,9 @@
         <!-- banner -->
         <section class="relative mx-[5vw] my-10">
             <div class="md:absolute lg:top-30 md:w-1/2 lg:w-1/2 z-1">
-                <h2 class="adl-font text-xl md:text-3xl lg:text-4xl">Pamper Your Pet,<br>Because They Deserve the Bes</h2>
+                <h2 class="adl-font text-xl bg-gradient-to-r 
+                from-red-500 via-orange-500 via-yellow-500 via-green-500 via-blue-500 via-indigo-500 to-purple-500 
+                bg-clip-text text-transparent animated-gradient md:text-3xl lg:text-4xl">Pamper Your Pet,<br>Because They Deserve the Bes</h2>
                 <p class="text-gray-500 my-5">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
                 <button class="bg-yellow-300 py-2 px-5 rounded hover:bg-yellow-400 hover:text-white transition-colors duration-400">Find a pet</button>
             </div>
@@ -83,11 +93,6 @@
                     <p class="text-gray-600">Dog food</p>
                 </div>
                 <div class="text-center px-5 py-10 rounded-md bg-yellow-200 hover:drop-shadow-md transition duration-200">
-                    <img class="bg-white p-4 rounded-full mx-auto" src="assets/fish-cartoon.png" alt="">
-                    <h2 class="font-bold my-4">Fish</h2>
-                    <p class="text-gray-600">Fish tank</p>
-             </div>
-                <div class="text-center px-5 py-10 rounded-md bg-yellow-200 hover:drop-shadow-md transition duration-200">
                     <img class="bg-white p-4 rounded-full mx-auto" src="assets/cat-cartoon.png" alt="">
                     <h2 class="font-bold my-4">Cat</h2>
                     <p class="text-gray-600">Cat nap</p>
@@ -98,14 +103,19 @@
                     <p class="text-gray-600">Bird nest  </p>
                 </div>
                 <div class="text-center px-5 py-10 rounded-md bg-yellow-200 hover:drop-shadow-md transition duration-200">
-                    <img class="bg-white p-4 rounded-full mx-auto" src="assets/mouse-cartoon.png" alt="">
-                    <h2 class="font-bold my-4">Mouse</h2>
-                    <p class="text-gray-600">Mouse trap</p>
+                    <img class="bg-white p-4 rounded-full mx-auto" src="assets/dog-cartoon.png" alt="">
+                    <h2 class="font-bold my-4">Dog</h2>
+                    <p class="text-gray-600">Dog food</p>
                 </div>
                 <div class="text-center px-5 py-10 rounded-md bg-yellow-200 hover:drop-shadow-md transition duration-200">
-                    <img class="bg-white p-4 rounded-full mx-auto" src="assets/rabbit-cartoon.png" alt="">
-                    <h2 class="font-bold my-4">Rabbit</h2>
-                    <p class="text-gray-600">Rabbit hutch</p>
+                    <img class="bg-white p-4 rounded-full mx-auto" src="assets/cat-cartoon.png" alt="">
+                    <h2 class="font-bold my-4">Cat</h2>
+                    <p class="text-gray-600">Cat nap</p>
+                </div>
+                <div class="text-center px-5 py-10 rounded-md bg-yellow-200 hover:drop-shadow-md transition duration-200">
+                    <img class="bg-white p-4 rounded-full mx-auto" src="assets/bird-cartoon.png" alt="">
+                    <h2 class="font-bold my-4">Bird</h2>
+                    <p class="text-gray-600">Bird nest  </p>
                 </div>
             </div>
         </section>
@@ -250,24 +260,20 @@
                 </div>
             </div>
         </section>
-
-            
+        <!-- Footer -->
         <footer class="bg-yellow-200 px-[5vw] my-80 md:my-60 py-6">
-
             <section class="grid -mt-80 md:-mt-50 grid-cols-1 md:grid-cols-2 lg:grid-cols-10 justify-center items-center py-8 bg-pet-primary rounded-lg">
                 <div class="lg:col-span-4 flex justify-center items-center">
                     <img class="w-3/6" src="assets/cute-pet-mid.png" alt="Dog">
                 </div>
                 <div class="lg:col-span-6 text-center p-4">
-                    <h1 class="text-2xl font-bold py-3">Get Pawsome News!</h1>
-                    <p class="text-lg py-4">Exclusive training tips, ticks, product deals and more.</p>
-                    <input class="bg-white w-full h-8 rounded-md placeholder:p-4 focus:outline-1 focus:outline-yellow-500" type="text" placeholder="Enter Email...">
-                    <button class="bg-yellow-300 my-4 py-2 px-6 rounded-md ">Subscribe</button>
+                    <h1 class="text-2xl font-bold py-3 lg:text-left">Get Pawsome News!</h1>
+                    <p class="text-lg py-4 lg:text-left">Exclusive training tips, ticks, product deals and more.</p>
+                    <input class="bg-white w-full lg:w-4/6 lg:block h-10 rounded-md placeholder:p-4 focus:outline-1 focus:outline-yellow-500" type="text" placeholder="Enter Email...">
+                    <button class="bg-yellow-300 my-4 py-2 px-6 rounded-md lg:block">Subscribe</button>
                 </div>
             </section>
-
-
-            <div class="lg:flex lg:justify-between items-end">
+            <div class="lg:flex lg:justify-between items-end md:py-8">
                 <section class="md:flex md:flex-col md:justify-center md:items-center lg:items-start flex-2 py-4">
                     <div class="flex gap-4 items-center py-4">
                         <img class="w-8" src="assets/logo-footer.png" alt="">
@@ -291,15 +297,8 @@
                         <li><a class="text-3xl hover:text-4xl hover:text-yellow-500 transition-colors duration-300" href="#"><i class="fa-brands fa-youtube"></i></a></li>
                     </ul>
                 </section>
-                
             </div>
         </footer>
-
-
-
-
-        
-        <div class="h-[1000px]"></div>
     </main>
   </body>
 </html>
