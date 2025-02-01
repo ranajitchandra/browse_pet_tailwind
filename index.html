@@ -114,7 +114,7 @@
             <h1 class="adl-font text-2xl font-semibold mb-8">Trending Pet Products</h1>
             <div class="flex flex-col md:flex-row gap-5">
                 <!-- left box -->
-                <div class="relative p-3 h-75 md:hidden lg:block lg:h-auto lg:basis-3/6 bg-yellow-100 box-border rounded-md">
+                <div class="relative p-3 h-75 md:hidden lg:block lg:h-auto lg:basis-3/6 bg-yellow-200 box-border rounded-md">
                     <div>
                         <h2 class="adl-font lg:text-3xl py-4">T-Shirt For Dogs</h2>
                         <p>A dog T-shirt is more than just a piece of clothing; it is a statement of love for our furry friends.</p>
@@ -221,7 +221,7 @@
                 
             </div>
         </section>
-
+        <!-- Pet Price -->
         <section class="px-[5vw] my-10 py-8">
             <h1 class="adl-font text-2xl font-semibold mb-8">Everyday Low Price</h1>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-10 gap-8">
@@ -251,18 +251,55 @@
             </div>
         </section>
 
-        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-10 justify-center items-center mx-[5vw] my-10 py-8 bg-pet-primary rounded-lg">
-            <div class="lg:col-span-4 flex justify-center items-center">
-                <img class="w-3/6" src="assets/cute-pet-mid.png" alt="Dog">
+            
+        <footer class="bg-yellow-200 px-[5vw] my-80 md:my-60 py-6">
+
+            <section class="grid -mt-80 md:-mt-50 grid-cols-1 md:grid-cols-2 lg:grid-cols-10 justify-center items-center py-8 bg-pet-primary rounded-lg">
+                <div class="lg:col-span-4 flex justify-center items-center">
+                    <img class="w-3/6" src="assets/cute-pet-mid.png" alt="Dog">
+                </div>
+                <div class="lg:col-span-6 text-center p-4">
+                    <h1 class="text-2xl font-bold py-3">Get Pawsome News!</h1>
+                    <p class="text-lg py-4">Exclusive training tips, ticks, product deals and more.</p>
+                    <input class="bg-white w-full h-8 rounded-md placeholder:p-4 focus:outline-1 focus:outline-yellow-500" type="text" placeholder="Enter Email...">
+                    <button class="bg-yellow-300 my-4 py-2 px-6 rounded-md ">Subscribe</button>
+                </div>
+            </section>
+
+
+            <div class="lg:flex lg:justify-between items-end">
+                <section class="md:flex md:flex-col md:justify-center md:items-center lg:items-start flex-2 py-4">
+                    <div class="flex gap-4 items-center py-4">
+                        <img class="w-8" src="assets/logo-footer.png" alt="">
+                        <h1 class="lg:block text-2xl text-gray-600 font-semibold">Browse Pet</h1>
+                    </div>
+                    <p class="lg:w-2/3">Pets bring joy, love,and companionship to families, offering comfort and happiness.</p>
+                </section>
+                <section class="flex-1 py-4">
+                    <ul class="leading-8">
+                        <li><a class="hover:text-yellow-600 transition-colors duration-200" href="#">Fine a Pet</a></li>
+                        <li><a class="hover:text-yellow-600 transition-colors duration-200" href="#">Breeds</a></li>
+                        <li><a class="hover:text-yellow-600 transition-colors duration-200" href="#">Contact US</a></li>
+                    </ul>
+                </section>
+                <section class="flex-1 py-4">
+                    <p class="py-6">Follow US</p>
+                    <ul class="flex gap-4">
+                        <li><a class="text-3xl hover:text-4xl hover:text-yellow-500 transition-colors duration-300" href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+                        <li><a class="text-3xl hover:text-4xl hover:text-yellow-500 transition-colors duration-300" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a class="text-3xl hover:text-4xl hover:text-yellow-500 transition-colors duration-300" href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a class="text-3xl hover:text-4xl hover:text-yellow-500 transition-colors duration-300" href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                </section>
+                
             </div>
-            <div class="lg:col-span-6 text-center p-4">
-                <h1 class="text-2xl font-bold py-3">Get Pawsome News!</h1>
-                <p class="text-lg py-4">Exclusive training tips, ticks, product deals and more.</p>
-                <input class="bg-white w-full h-8 rounded-md placeholder:p-4 focus:outline-1 focus:outline-yellow-500" type="text" placeholder="Enter Email...">
-                <button class="bg-yellow-300 my-4 py-2 px-6 rounded-md ">Subscribe</button>
-            </div>
-        </section>
+        </footer>
+
+
+
+
         
+        <div class="h-[1000px]"></div>
     </main>
   </body>
 </html>
